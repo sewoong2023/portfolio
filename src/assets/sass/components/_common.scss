@@ -1,0 +1,392 @@
+// * --------------------------
+// Common
+// --------------------------- *
+
+// Font
+.red{
+  color: $font-red;
+}
+
+.orange{
+  color: $font-orange;
+}
+
+.bold{
+  color: brown;
+  
+  font : {
+    weight: 700;
+  }
+}
+
+// Input box placeholder
+.place-hide{
+  &:focus{
+    &::-webkit-input-placeholder{
+      color: transparent
+    }
+    &::-moz-placeholder{
+      color: transparent
+    }
+    &::-ms-input-placeholder{
+      color: transparent
+    }
+  }
+}
+
+// IR 기법
+.hide {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.clear {
+  clear: both;
+
+  &::after {
+    content: ""; 
+    display: block; 
+    clear: both;
+  }
+}
+
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+// Popup
+#popupEx{
+  > section{
+    @include center;
+
+    .popup-title{
+      background: $bg-orange;
+      height: 50px;
+      text-align: center;
+      color: $font-white;
+      line-height: 50px;
+    }
+
+    .popup-content{
+      margin: 10px;
+      background: $bg-table ;
+      text-align: center;
+      height: 300px;
+    }
+  }
+}
+
+#popup,
+.popup-layer{
+  .popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: $bg-white;
+    width: 400px;
+    height: auto;
+    min-height: 500px;
+    z-index: 2;
+
+    @media (min-width: 0) and (max-width: 767px){
+      width: 90%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .title{
+      height: 30px;
+
+      ul{
+        display: flex;
+        justify-content: space-around;;
+        align-items: center;
+        height: 100%;
+
+        li{
+          &:first-child{
+            width: 80%;
+          }
+
+          &:last-child{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .content{
+      padding: 0 5px 5px;
+
+      .content-inner{
+        height: 450px;
+        overflow: scroll;
+      }
+    }
+  }
+}
+
+.popup-layer{
+  .popup{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.8);
+  }
+}
+
+#dim{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: $bg-black;
+  opacity: .5;
+  z-index: 0;
+}
+
+//Layout
+.box-area{
+  margin: 10px 0;
+}
+
+dl{
+  margin-top: 10px;
+  
+  &:first-child{
+    margin-top: 0;
+  }
+
+  dt{
+    font : {
+      weight: 700;
+    }
+  }
+
+  dd{
+    color: $font-gray;
+  }
+}
+
+i{
+  display: block;
+  margin-top: 10px;
+}
+
+.ml0{
+  margin-left: 0;
+}
+
+.mb10{
+  margin-bottom: 10px;
+}
+
+// tooltip
+.tooltip-icon{
+  position: relative;
+  width: 125px;
+
+  img{
+    width: 300px;
+    height: 200px;
+    border:1px solid red;
+    object-fit: fill;
+  }
+
+  span{
+    position: absolute;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $bg-black;
+    top: 0;
+    left: 300px;
+    width: 300px;
+    text-align: center;
+    color: $font-white;
+    transform: translateX(5%);
+    opacity: 0;
+    transition: .5s;
+    visibility: hidden;
+
+    &::after{
+      content:'';
+      position: absolute;
+      background-color: $bg-black;
+      top: 50%;
+      left: -5px;
+      bottom: -5px;
+      width: 10px;
+      height: 10px;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+
+  &:hover{
+    span{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+.tab-component{
+  margin-top: 20px;
+}
+
+.tab-menu{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid $line-gray;
+
+  li{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+
+    &.active{
+      background: orange;
+
+      a{
+        color: $font-white;
+      }
+    }
+  }
+}
+
+//기존디자인 없애기
+.file-custom{
+  display: flex;
+
+  .upload-name{
+    padding: 0 10px;
+    border: 1px solid $line-gray;
+    width: auto;
+    height: 40px;
+    min-width: 200px;
+    vertical-align: middle;
+    color: $font-gray;
+    line-height: 40px;
+    box-sizing: border-box; 
+  }
+
+  input[type="file"]{
+    position: absolute;
+    padding: 0;
+    width: 0;
+    height: 0;
+    border: 0;
+    overflow: hidden;
+  }
+
+  label{
+    margin-left: 10px;
+    background-color: $bg-orange;
+    width: 103px;
+    height: 40px;
+    text-align: center;
+    color: $font-white;
+    cursor: pointer;
+    box-sizing: border-box;
+    line-height: 40px;
+  }
+}
+//임시 클래스
+.temporary{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 순차적 애니메이션 (일반사용)
+.stagger-wrapper1{
+  .stagger-item{
+    animation: sliderShow 1.5s;
+    animation-fill-mode: both;
+
+    &:nth-child(1){
+      animation-delay:  0.07s;
+    }
+
+    &:nth-child(2){
+      animation-delay:  0.14s;
+    }
+
+    &:nth-child(3){
+      animation-delay:  0.21s;
+    }
+  }
+}
+
+// 순차적애니메이션 (메인페이지 slick전용)
+.slick-active{
+  .stagger-wrapper{
+    .stagger-item{
+      animation: sliderShow 1.5s;
+      animation-fill-mode: both;
+  
+      &:nth-child(1){
+        animation-delay:  0.07s;
+      }
+  
+      &:nth-child(2){
+        animation-delay:  0.14s;
+      }
+  
+      &:nth-child(3){
+        animation-delay:  0.21s;
+      }
+    }
+  }
+}
+
+// 이미지 업로드
+.image-area {
+  visibility: hidden;
+  
+  &.on{
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid;
+    visibility: visible;
+    width: 100%;
+    height: auto;
+
+    .image-box{
+      position: relative;
+      margin-right: 10px;
+      width: 240px;
+
+      .closeBtn{
+        position: absolute;
+        background: $bg-black;
+        top: 5px;
+        right: 5px;
+        width: 20px;
+        height: 20px;
+        color: $font-white;
+        transform: scale(1.5);
+        cursor: pointer;
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

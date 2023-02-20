@@ -1,0 +1,101 @@
+// * --------------------------
+// Input
+// --------------------------- *
+.input-style{
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+
+  input[type=text],
+  input[type=password]{
+    padding: 10px;
+    border: 1px solid $line-gray;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    box-sizing: border-box;
+
+    &:focus{
+      border: 1px solid $line-orange;
+    }
+  }
+
+  .text-light{
+    position: relative;
+    margin-bottom: 10px;
+    width: 200px;
+
+    input{    
+      &:focus{
+        border: 1px solid $bg-blue;    
+        box-shadow: 0 0 5px $bg-blue;    
+      }
+    }
+  }
+
+  li{
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+.input-radio{
+  display: flex;
+
+  .title{
+    position: relative;
+    margin-right: 10px;
+    padding-right: 5px;
+    min-width: 50px;
+
+    font : {
+      weight: $bold;
+    }
+
+    &:after{
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 2px;
+      height: 1.5625rem;
+      background: $bg-blue;
+    }
+  }
+
+  li{
+    margin-right: 10px;
+  }
+}
+
+select{
+  padding: 5px 10px;
+  border: 1px solid $line-gray;
+  border-radius: 3px;
+  width: auto;
+  height: 40px;
+  min-width: 150px;
+}
+
+.check-list,
+.radio-list{
+  display: flex;
+
+  li{
+    margin-left: 5px;
+
+    label{
+      margin-left: 10px;
+    }
+  }
+}
+
+textarea{
+  padding: 20px 10px;
+  border: 1px solid $line-gray;
+  width: 100%;
+  height: 150px;
+  color: $font-gray;
+  outline: none;
+  box-sizing: border-box;
+}

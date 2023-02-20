@@ -1,0 +1,53 @@
+// * --------------------------
+// Bullet
+// --------------------------- *
+.paragraph{
+  margin-top: 10px;
+}
+
+.hyphen{
+  position: relative;
+  left: 15px;
+
+  &::before{
+    content:"-";
+    position: absolute;
+    left: -15px;
+  }
+}
+
+.asterisk{
+  position: relative;
+  left: 15px;
+
+  &::before{
+    content:"*";
+    position: absolute;
+    left: -15px;
+  }
+}
+
+.asterisk-after{
+  position: relative;
+  display: inline-block;
+  width: auto;
+
+  &::after{
+    content:"*";
+    position: absolute;
+    right: -15px;
+  }
+}
+
+.reference{
+  position: relative;
+  margin-top: 10px;
+  left: 20px;
+
+  &::before{
+    content: "※";
+    position: absolute;
+    top: 0;
+    left: -20px;
+  }
+}

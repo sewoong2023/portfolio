@@ -1,0 +1,19 @@
+{
+  // 타입스크립트 컴파일러가 포한되어질 파일들 
+  "include": [
+    "src/**/*.ts"
+  ],
+
+  // 타입스크립트 컴파일러 대상에서 제외
+  "exclude": [
+    "node_modules"
+  ],
+
+  // 타입스크립ㅋ트 컴파일러 옵션
+  "compilerOptions": {
+    "module" : "commonjs", // 모듈에 대한 옵션
+    "rootDir": "src",      // 모듈에 루트가 되는 디렉토리
+    "outDir" : "src/assets/js/",     // 타입스크립트 컴파일 된  파일들이 만들어지는 최상위 폴더 위치
+    "target" :"es5"        // 자바스크립트 버전
+  }
+}

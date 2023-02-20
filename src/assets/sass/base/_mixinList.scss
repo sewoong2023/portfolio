@@ -1,0 +1,51 @@
+// * --------------------------
+// Mixin (Button)
+// --------------------------- *
+
+@mixin btn($background: $btn-default, $width: 120px, $height: 50px){
+  border: 0;
+  border-radius: 3px;
+  background: $btn-default;
+  color: $font-white;
+  width: $width;
+  height: $height;
+}
+
+@mixin btnHover($btnColor: $btn-default){
+  background: darken($btnColor, 5%);  
+}
+
+@mixin btnActive($btnColor: $btn-default){
+  background: darken($btnColor, 10%);  
+}
+
+@mixin btnBorder($background: $btn-default, $width: 120px, $height: 50px){
+  margin-left: 10px;
+  border: 1px solid $btn-default;
+  border-radius: 3px;
+  background: $bg-white;
+  color: $font-orange;
+  width: $width;
+  height: $height;
+}
+
+@mixin btnBorderHover($btnColor: $btn-default){
+  border: 1px solid darken($btnColor, 5%);  
+}
+
+@mixin btnBorderActive($btnColor: $btn-default){
+  border: 1px solid darken($btnColor, 10%);  
+}
+
+@mixin center($bg-color : $bg-white){
+  position: fixed;
+  border: 1px solid red;
+  border-radius: 5px;
+  background-color: $bg-color;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}

@@ -1,0 +1,62 @@
+// * --------------------------
+// Button
+// --------------------------- *
+button{
+  @include btn($width: 100px, $height: 40px);
+
+  &:hover{
+    @include btnHover;
+  }
+
+  &:active{
+    @include btnActive;
+  }
+}
+
+.btn-list{
+  margin: 50px 0;
+  width: 100%;
+  text-align: center;
+
+  > button{
+    &.btn{
+      @include btn;
+
+      &:hover{
+        @include btnHover;
+      }
+
+      &:active{
+        @include btnActive;
+      }
+    }
+
+    &.btn-border{
+      @include btnBorder;
+
+      &:hover{
+        @include btnBorderHover;
+      }
+      &:active{
+        @include btnBorderActive;
+      }
+    }
+  }
+}
+
+.table-in-btn{
+  border: 0;
+  border-radius: 3px;
+  background: $btn-default;
+  width: 80px;
+  height: 30px;
+  color: $font-white;
+  
+  font : {
+    size: .75rem;
+  }
+
+  &.border{
+    @include btnBorder($background: $btn-default, $width: 80px, $height: 30px)
+  }
+}

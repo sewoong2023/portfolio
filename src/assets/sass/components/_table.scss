@@ -1,0 +1,107 @@
+// * --------------------------
+// Table
+// --------------------------- *
+//ie에서 border 값 오류 해결
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+  background-clip: padding-box;
+}
+
+//기본 Table
+table{
+  &.default-table,
+  &.default-table-view,
+  &.default-table-scroll{
+    thead{
+      tr{
+        th{
+          border-color: $line-orange;
+          border-top: 2px solid $line-orange;
+          border-bottom: 2px solid $line-orange;
+          border-right: 1px solid $line-gray;
+          border-left: 1px solid $line-gray;
+          height: 50px;
+          line-height: 50px;
+
+          font : {
+            size : 0.9375rem;
+            weight: 700;
+          }
+
+          &:first-child,
+          &:last-child{
+            border-left: 0;
+            border-right: 0;   
+          }
+        }
+      }
+    }
+    
+    tbody{
+      tr{
+        td{
+          border-bottom: 1px solid $line-gray;
+          height: 50px;
+          text-align: center;
+          line-height: 50px;
+
+          font : {
+            size: 0.9375rem;
+          }
+        }
+      }
+    }
+  }
+  &.default-table-view{
+    tbody{
+      tr{
+        th, td{
+          border-top: 1px solid;
+          border-bottom: 1px solid;
+        }
+
+        th{
+          background: $bg-table;
+          vertical-align: middle;
+
+          span{
+            display: block;
+          }
+        }
+
+        td{
+          padding: 5px 10px;
+          text-align: left;
+
+          ul{
+            li{
+              line-height: 2;
+            }
+          }
+        }
+
+        &:first-child{
+          th, td{
+            border-top: 2px solid $line-orange;
+          }
+        }
+      }
+    }
+  }
+
+  &.default-table-scroll{
+    thead,
+    tbody tr{
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+    }
+    
+    tbody{
+      &.scroll{
+        display: block;
+        max-height: 100px;
+        overflow-y: scroll;
+      }
+    }
+  }
+}
