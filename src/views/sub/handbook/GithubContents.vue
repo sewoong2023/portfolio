@@ -49,10 +49,16 @@
                   Git 초기화 : "<span class="bold">git init</span>" 명령어 입력
                 </li>
                 <li>
+                  로컬저장소에 저장 : <span class="bold">git add .</span> 
+                </li>
+                <li>
                   저장소 주소 : "<span class="bold">git remote add origin [ git주소 ]</span>"
                 </li>
                 <li>
                   push하기 : "<span class="bold">git push origin master</span>" 여기서 [master]는 브랜츠명
+                </li>
+                <li>
+                  push : 2023년 2월20일 현재 로컬에서 원격으로 저장할때 패스워드가 아닌 토큰 값으로 넣어야 함
                 </li>
               </ol>
             </article>
