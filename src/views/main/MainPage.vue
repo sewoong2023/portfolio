@@ -37,38 +37,69 @@
     </section>
     <section id="myProject">
       <h2>My Project</h2>
+      <h3>2023</h3>
+      <section class="project-list">
+        <article>
+          <figure>
+            <img src="" alt="" class="noimg" @error="imgReplace">
+            <figcaption>I_Mate<span>(vue.js 프론트앤드)</span></figcaption>
+          </figure>
+        </article>
+      </section>
       <h3>2022</h3>
       <section class="project-list">
         <article>
           <figure>
-            <img src="../../assets/images/main/2022/main-capture-24.png" alt="부천 스마트시티">
+            <img src="../../assets/images/main/2022/main-capture-24.png" alt="부천 스마트시티" class="noimg" @error="imgReplace">
             <figcaption>부천 스마트시티<span>(신규 퍼블리싱)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2022/main-capture-25.png" alt="부천 시티패스">
+            <img src="../../assets/images/main/2022/main-capture-25.png" alt="부천 시티패스" @error="imgReplace">
             <figcaption>부천 시티패스<span>(신규 퍼블리싱)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="" alt="">
+            <img src="" alt="" class="noimg" @error="imgReplace">
             <figcaption>남양주 주차포탈<span>(신규 퍼블리싱)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="" alt="">
+            <img src="" alt="" class="noimg" @error="imgReplace">
             <figcaption>한솔홈데코 2D시뮬레이션<span>(신규 퍼블리싱)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <div class="noimg">
-              <p>NO <span class="br">IMAGE</span></p>
-            </div>
+            <img src="" alt="" class="noimg" @error="imgReplace">
+            <figcaption>골핑 이벤트 페이지 <span>(신규 퍼블리싱)</span></figcaption>
+          </figure>
+        </article>
+        <article>
+          <figure>
+            <img src="" alt="" class="noimg" @error="imgReplace">
+            <figcaption>RASOLRA (관리자)<span>(신규 퍼블리싱)</span></figcaption>
+          </figure>
+        </article>
+        <article>
+          <figure>
+            <img src="" alt="" class="noimg" @error="imgReplace">
+            <figcaption>더블유이엔지 (관리자)<span>(신규 퍼블리싱)</span></figcaption>
+          </figure>
+        </article>
+        <article>
+          <figure>
+            <img src="" alt="" class="noimg" @error="imgReplace">
             <figcaption>경기도 주식회사 (관리자)<span>(신규 퍼블리싱)</span></figcaption>
+          </figure>
+        </article>
+        <article>
+          <figure>
+            <img src="" alt="" class="noimg" @error="imgReplace">
+            <figcaption>kRARA (관리자)<span>(신규 퍼블리싱)</span></figcaption>
           </figure>
         </article>
       </section>
@@ -76,19 +107,19 @@
       <section class="project-list">
         <article>
           <figure>
-            <img src="../../assets/images/main/2021/main-capture-20.png" alt="부천한빛도서관 정산기">
+            <img src="../../assets/images/main/2021/main-capture-20.png" alt="부천한빛도서관 정산기" class="noimg" @error="imgReplace">
             <figcaption>부천 한빛도서관<span>(신규 퍼블리싱)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2021/main-capture-21.png" alt="평택주차포탈">
+            <img src="../../assets/images/main/2021/main-capture-21.png" alt="평택주차포탈" class="noimg" @error="imgReplace">
             <figcaption>평택주차포탈<span>(신규 퍼블리싱)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2021/main-capture-22.png" alt="화성주차포탈">
+            <img src="../../assets/images/main/2021/main-capture-22.png" alt="화성주차포탈" class="noimg" @error="imgReplace">
             <figcaption>화성주차포탈<span>(신규 퍼블리싱)</span></figcaption>
           </figure>
         </article>
@@ -97,43 +128,43 @@
       <section class="project-list">
         <article>
           <figure>
-            <img src="../../assets/images/main/2020/main-capture-13.png" alt="양주주차포탈">
+            <img src="../../assets/images/main/2020/main-capture-13.png" alt="양주주차포탈" class="noimg" @error="imgReplace">
             <figcaption>양주시 주차포털<span>(신규 퍼블리싱)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2020/main-capture-14.png" alt="부천노상">
+            <img src="../../assets/images/main/2020/main-capture-14.png" alt="부천노상" class="noimg" @error="imgReplace">
             <figcaption>부천 노상앱<span>(신규 퍼블리싱)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2020/main-capture-15.png" alt="수원주차포탈">
+            <img src="../../assets/images/main/2020/main-capture-15.png" alt="수원주차포탈" class="noimg" @error="imgReplace">
             <figcaption>수원시 주차포탈<span>(유지보수)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2020/main-capture-16.png" alt="부천주차포탈">
+            <img src="../../assets/images/main/2020/main-capture-16.png" alt="부천주차포탈" class="noimg" @error="imgReplace">
             <figcaption>부천시 주차포탈<span>(유지보수)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2020/main-capture-17.png" alt="한강주차포탈">
+            <img src="../../assets/images/main/2020/main-capture-17.png" alt="한강주차포탈" class="noimg" @error="imgReplace">
             <figcaption>한강 주차포탈<span>(유지보수)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2020/main-capture-18.png" alt="관리자페이지">
+            <img src="../../assets/images/main/2020/main-capture-18.png" alt="관리자페이지" class="noimg" @error="imgReplace">
             <figcaption>Inerv-manager<span>(유지보수)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2020/main-capture-19.png" alt="대시보드">
+            <img src="../../assets/images/main/2020/main-capture-19.png" alt="대시보드" class="noimg" @error="imgReplace">
             <figcaption>대시보드<span>(유지보수)</span></figcaption>
           </figure>
         </article>
@@ -142,53 +173,49 @@
       <section class="project-list">
         <article>
           <figure>
-            <img src="../../assets/images/main/2019/main-capture-07.png" alt="뉴오리진">
+            <img src="../../assets/images/main/2019/main-capture-07.png" alt="뉴오리진" class="noimg" @error="imgReplace">
             <figcaption>뉴 오리진<span>(유지보수)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2019/main-capture-08.png" alt="강아지왕국&고양이왕국">
+            <img src="../../assets/images/main/2019/main-capture-08.png" alt="강아지왕국&고양이왕국" class="noimg" @error="imgReplace">
             <figcaption>강아지왕국?(&고양이왕국)<span>(신규 퍼블리싱)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2019/main-capture-09.png" alt="동원몰">
+            <img src="../../assets/images/main/2019/main-capture-09.png" alt="동원몰" class="noimg" @error="imgReplace">
             <figcaption>동원몰<span>(유지보수)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2019/main-capture-10.png" alt="빅커피">
+            <img src="../../assets/images/main/2019/main-capture-10.png" alt="빅커피" class="noimg" @error="imgReplace">
             <figcaption>빅커피<span>(신규 퍼블리싱)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2019/main-capture-11.png" alt="사진노리">
+            <img src="../../assets/images/main/2019/main-capture-11.png" alt="사진노리" class="noimg" @error="imgReplace">
             <figcaption>사진노리<span>(유지보수)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2019/main-capture-12.png" alt="픽스토리">
+            <img src="../../assets/images/main/2019/main-capture-12.png" alt="픽스토리" class="noimg" @error="imgReplace">
             <figcaption>픽스토리<span>(유지보수)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <div class="noimg">
-              <p>NO <span class="br">IMAGE</span></p>
-            </div>
+            <img src="" alt="" class="noimg" @error="imgReplace"> 
             <figcaption>성원부동산<span>(신규 퍼블리싱)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <div class="noimg">
-              <p>NO <span class="br">IMAGE</span></p>
-            </div>
+            <img src="" alt="" class="noimg" @error="imgReplace">
             <figcaption>범아<span>(유지보수)</span></figcaption>
           </figure>
         </article>
@@ -197,25 +224,25 @@
       <section class="project-list">
         <article>
           <figure>
-            <img src="../../assets/images/main/2018/main-capture-03.png" alt="구리시여성노인회관">
+            <img src="../../assets/images/main/2018/main-capture-03.png" alt="구리시여성노인회관" class="noimg" @error="imgReplace">
             <figcaption>구리시여성노인화관<span>(신규 퍼블리싱)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2018/main-capture-04.png" alt="인천영종역사관">
+            <img src="../../assets/images/main/2018/main-capture-04.png" alt="인천영종역사관" class="noimg" @error="imgReplace">
             <figcaption>인천영종역사관<span>(신규 퍼블리싱)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2018/main-capture-05.png" alt="IFEZ">
+            <img src="../../assets/images/main/2018/main-capture-05.png" alt="IFEZ" class="noimg" @error="imgReplace">
             <figcaption>IFEZ<span>(신규 퍼블리싱)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2018/main-capture-23.png" alt="서울열린데이터">
+            <img src="../../assets/images/main/2018/main-capture-23.png" alt="서울열린데이터" class="noimg" @error="imgReplace">
             <figcaption>서울열린데이터<span>(유지보수)</span></figcaption>
           </figure>
         </article>
@@ -224,13 +251,13 @@
       <section class="project-list">
         <article>
           <figure>
-            <img src="../../assets/images/main/2017/main-capture-01.png" alt="정부24">
+            <img src="../../assets/images/main/2017/main-capture-01.png" alt="정부24" class="noimg" @error="imgReplace">
             <figcaption>정부24<span>(유지보수)</span></figcaption>
           </figure>
         </article>
         <article>
           <figure>
-            <img src="../../assets/images/main/2017/main-capture-02.png" alt="충남지역사회서비스지원단">
+            <img src="../../assets/images/main/2017/main-capture-02.png" alt="충남지역사회서비스지원단" class="noimg" @error="imgReplace">
             <figcaption>충남지역사회서비스지원단<span>(신규 퍼블리싱)</span></figcaption>
           </figure>
         </article>
@@ -344,6 +371,12 @@ export default {
     PopupType,
     VueSlickCarousel 
   },
+
+  methods:{
+    imgReplace(e){
+      e.target.src = require(`../../assets/images/main/noImage/no-image.png`);
+    }
+  }
 }
 </script>
 
