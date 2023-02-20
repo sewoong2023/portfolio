@@ -52,6 +52,9 @@
                   로컬저장소에 저장 : <span class="bold">git add .</span> 
                 </li>
                 <li>
+                  메세지 입력 : <span class="bold">git commit -m "메세지"</span>
+                </li>
+                <li>
                   저장소 주소 : "<span class="bold">git remote add origin [ git주소 ]</span>"
                 </li>
                 <li>
@@ -59,6 +62,7 @@
                 </li>
                 <li>
                   push : 2023년 2월20일 현재 로컬에서 원격으로 저장할때 패스워드가 아닌 토큰 값으로 넣어야 함
+                  (https://yian.tistory.com/38)
                 </li>
               </ol>
             </article>
