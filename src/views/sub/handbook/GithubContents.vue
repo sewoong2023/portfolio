@@ -62,7 +62,7 @@
                 </li>
                 <li>
                   push : 2023년 2월20일 현재 로컬에서 원격으로 저장할때 패스워드가 아닌 토큰 값으로 넣어야 함
-                  (https://yian.tistory.com/38)
+                  (<a href="https://yian.tistory.com/38" title="참조사이트">참조사이트</a>)
                 </li>
               </ol>
             </article>
